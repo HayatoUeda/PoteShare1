@@ -1,0 +1,14 @@
+<div class="top">
+  <div class="top-main">
+    <!--search box-->
+    <div class="top-search">
+      <p style="line-height: 60px; font-size: 20px;">
+        Potepan Shareでまだ体験したことのない旅をしよう
+      </p>
+        <%= search_form_for @q, url: search_rooms_path do |f| %>
+          <%= f.search_field :address_cont, placeholder: 'エリア' %>
+          <%= f.submit "探す", class: "btn btn-primary" %>
+        <% end %>
+    </div>
+  </div>
+</div>
